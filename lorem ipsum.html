@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<script src="index.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: img id="image";
+}
+
+.header {
+  color: #fffff;
+  background-color: #70c71f;
+  padding: 0.3px;
+  text-align: left
+
+}
+.header h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #7fa80f;
+}
+
+ #image {
+            position: absolute;
+            top: 30px;
+            right: 20px;  /* Adjust right margin for desired position */
+            width: 50%;  /* Set image width to 50% (adjust as needed) */
+            max-width: 300px;  /* Set a maximum width for responsiveness */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 26px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: #3fd040;
+  color: black;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Frgo.org - "Hello Visitors," says Frgo</h1>
+</div>
+
+<div class="topnav">
+  <a onclick="gogo()">Games</a>
+  <a href="# insert tools list popup here">Tools</a>
+  <a href="mailto:frgo-admin@frgo.org">Contact</a>
+</div>
+<div class="left">
+<img id="image" src="#">  <button id="button" onclick="gogo()">Random</button>
+</div>
+</body>
+</html>
+
+
