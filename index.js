@@ -12,8 +12,7 @@ function display_image(imageUrl) {
 }
 
 function nano() {
-const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=unbangeemail@gmail.com&q=orlando,lf&aqi=no
-';
+const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=unbangeemail@gmail.com&q=orlando,lf&aqi=no';
 fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
