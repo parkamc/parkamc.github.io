@@ -12,18 +12,9 @@ function display_image(imageUrl) {
 }
 
 function nano() {
-const apiUrl = 'http://api.weatherapi.com/v1/forecast.json?key=27f96f52919b4129a8f161122242702&q=Orlando&days=8&aqi=no&alerts=no';
-fetch(apiUrl)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data);
-  })
-  .catch(error => {
-    console.error('Error:', error);
-  } 
+const apiurl = 'http://api.weatherapi.com/v1/forecast.json?key=27f96f52919b4129a8f161122242702&q=Orlando&days=8&aqi=no&alerts=no';
+    fetch(apiurl)
+        .then(response => response.json())
+        .then(data => display_image(data.url))
+        .catch(error => console.error("Error:", error)); 
 }
