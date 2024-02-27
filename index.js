@@ -12,7 +12,8 @@ function display_image(imageUrl) {
 }
 
 function nano() {
-const apiUrl = 'https://api.meteomatics.com/2024-02-27T10:50:00.000-05:00--2024-07-31T10:50:00.000-04:00:PT5M/t_min_-300cm_1h:F/28.5656649,-81.5856742/html?model=mix';
+const apiUrl = 'https://api.weatherapi.com/v1/current.json?key=unbangeemail@gmail.com&q=orlando,lf&aqi=no
+';
 fetch(apiUrl)
   .then(response => {
     if (!response.ok) {
